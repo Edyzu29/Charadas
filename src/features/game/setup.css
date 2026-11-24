@@ -1,0 +1,27 @@
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+legend { padding: 0 8px; color: var(--text-h); font-weight: 750; }
+.setup-form { display: grid; gap: 12px; max-width: 640px; }
+.setup-form > label { color: var(--text-h); font-weight: 700; }
+.setup-form > select { width: 100%; }
+.player-fieldset, .time-fieldset { display: grid; gap: 12px; }
+.player-row { display: flex; gap: 8px; }
+.player-row input { flex: 1; }
+.button-secondary { color: var(--text-h); background: var(--accent-bg); }
+.time-shortcuts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.time-shortcuts button { min-height: 48px; padding: 8px; }
+.time-shortcuts button[aria-pressed="true"] { outline: 3px solid var(--accent); }
+.time-fieldset > label { font-size: 15px; }
+.warning-message { padding: 12px; border-radius: 10px; background: #fff2cf; color: #744b00; }
+.primary-action { min-height: 56px; font-size: 18px; }
+.primary-action:disabled { opacity: 0.55; cursor: not-allowed; }
+
+@media (max-width: 480px) {
+  .time-shortcuts { grid-template-columns: repeat(2, 1fr); }
+}
