@@ -7,4 +7,5 @@ export default defineConfig({
   test: {
     passWithNoTests: true,
   },
+  base: '/charadas/',
 })
